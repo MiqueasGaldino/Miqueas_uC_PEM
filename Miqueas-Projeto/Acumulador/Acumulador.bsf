@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 184 144)
+	(rect 16 16 256 144)
 	(text "Acumulador" (rect 5 0 73 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -33,8 +33,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "En_S_Bar" (rect 0 0 56 14)(font "Arial" (font_size 8)))
-		(text "En_S_Bar" (rect 21 43 77 57)(font "Arial" (font_size 8)))
+		(text "En_S_Barramento" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "En_S_Barramento" (rect 21 43 123 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
@@ -47,18 +47,25 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "BarE[7..0]" (rect 0 0 55 14)(font "Arial" (font_size 8)))
-		(text "BarE[7..0]" (rect 21 75 76 89)(font "Arial" (font_size 8)))
+		(text "BarEntrada[7..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "BarEntrada[7..0]" (rect 21 75 113 89)(font "Arial" (font_size 8)))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
-		(pt 168 32)
+		(pt 240 32)
 		(output)
-		(text "BarS[7..0]" (rect 0 0 56 14)(font "Arial" (font_size 8)))
-		(text "BarS[7..0]" (rect 91 27 147 41)(font "Arial" (font_size 8)))
-		(line (pt 168 32)(pt 152 32)(line_width 3))
+		(text "BarSaida[7..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "BarSaida[7..0]" (rect 139 27 219 41)(font "Arial" (font_size 8)))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "SaidaSS[7..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "SaidaSS[7..0]" (rect 143 43 219 57)(font "Arial" (font_size 8)))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 152 112))
+		(rectangle (rect 16 16 224 112))
 	)
 )
